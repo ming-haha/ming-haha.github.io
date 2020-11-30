@@ -1,0 +1,92 @@
+img {
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.g-carousel-container {
+  width: 100%;
+  height: 4.3rem;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+.g-carousel-container .g-carousel-list {
+  height: 100%;
+  transition: 0.5s;
+}
+.g-carousel-container .g-carousel-list li {
+  float: left;
+  width: 7.5rem;
+  height: 100%;
+}
+.g-carousel-container .g-carousel-list li img {
+  width: 100%;
+  height: 100%;
+}
+.g-carousel-container .g-carousel-indicator {
+  position: absolute;
+  bottom: 0.2rem;
+  z-index: 2;
+  width: 100%;
+  height: 0.17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.g-carousel-container .g-carousel-indicator li {
+  width: 0.17rem;
+  height: 0.17rem;
+  background-color: #67b1ff;
+  margin-right: 0.15rem;
+  transform: rotate(-45deg);
+}
+.g-carousel-container .g-carousel-indicator li.selected {
+  background: #202629;
+}
+.g-carousel-container .g-carousel-prev,
+.g-carousel-container .g-carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 0.6rem;
+  height: 1.2rem;
+  background: url(../assets/btn-lefRight.png) no-repeat;
+  background-size: 7.03rem 1.2rem;
+}
+.g-carousel-container .g-carousel-prev.disabled,
+.g-carousel-container .g-carousel-next.disabled {
+  opacity: 0.35;
+}
+.g-carousel-container .g-carousel-prev {
+  left: 10px;
+}
+.g-carousel-container .g-carousel-next {
+  background-position: -6.43rem 0;
+  right: 10px;
+}
+.g-arrow {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  width: 0.48rem;
+  height: 0.27rem;
+  background: url(../assets/down.png) no-repeat;
+  background-size: 0.48rem 0.27rem;
+  animation: down 2s ease-in-out infinite;
+}
+@keyframes down {
+  50% {
+    transform: translate(-50%, 0.1rem);
+  }
+}

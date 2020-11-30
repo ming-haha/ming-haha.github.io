@@ -1,0 +1,59 @@
+.attend-container {
+  width: 100%;
+  height: 100%;
+  background: url('../assets/index_bg.jpg') center top / 100% 100% no-repeat;
+  position: relative;
+}
+.attend-container .attend-slogan {
+  position: absolute;
+  bottom: 1.6rem;
+  right: 0;
+  z-index: 3;
+  width: 7.5rem;
+  height: 5.62rem;
+  background: url('../assets/slogan.png') no-repeat;
+  background-size: 7.5rem 5.62rem;
+}
+.attend-container .attend-slogan .attend-play {
+  position: absolute;
+  left: 1.5rem;
+  top: 4.5rem;
+  width: 1.19rem;
+  height: 1.22rem;
+  background: url('../assets/vid_ani.png') no-repeat;
+  background-size: 1.19rem 1.22rem;
+  animation: moving 1.1s linear infinite;
+}
+.attend-container .attend-slogan .attend-play::after {
+  content: "";
+  position: absolute;
+  left: 0.45rem;
+  top: 0.3rem;
+  width: 0.45rem;
+  height: 0.59rem;
+  background: url('../assets/vid_arr.png') no-repeat;
+  background-size: 0.45rem 0.59rem;
+}
+.attend-container .attend-button {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  width: 6.27rem;
+  height: 2.09rem;
+  background: url('../assets/book_btn.png') no-repeat;
+  background-size: 6.27rem 2.09rem;
+  margin-left: -3.13rem;
+  text-indent: -999em;
+  z-index: 1;
+}
+@keyframes moving {
+  0% {
+    transform: scale(0.99);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(0.99);
+  }
+}

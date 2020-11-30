@@ -1,0 +1,146 @@
+.pop-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop-container .pop-inner {
+  position: relative;
+}
+.pop-container .pop-inner .pop-top {
+  background: url('../assets/pop_top_bg.png') no-repeat;
+  background-size: cover;
+  width: 6.53rem;
+  height: 1.09rem;
+}
+.pop-container .pop-inner .pop-mid {
+  background: url('../assets/pop_cir_bg.png') repeat-y;
+  background-size: 6.53rem 6.55rem;
+  width: 6.53rem;
+  margin-top: -1px;
+  font-size: 0.24rem;
+}
+.pop-container .pop-inner .pop-mid .pop-content {
+  background: url('../assets/b_pop_bg.png') left bottom no-repeat;
+  background-size: 6.53rem 5.41rem;
+}
+.pop-container .pop-inner .pop-mid .pop-content img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+.pop-container .pop-inner .pop-mid .pop-content .pop-button {
+  display: block;
+  width: 3.81rem;
+  height: 0.89rem;
+  margin: 0.5rem auto 0;
+  background: url('../assets/pop_btn_spr.png') no-repeat;
+  background-size: 3.81rem 9.65rem;
+}
+.pop-container .pop-inner .pop-bottom {
+  background: url('../assets/pop_bot.png') no-repeat;
+  background-size: cover;
+  width: 6.53rem;
+  height: 1.13rem;
+}
+.pop-container .pop-inner .pop-title {
+  position: absolute;
+  left: 0;
+  top: -0.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #fff;
+  letter-spacing: 0.04rem;
+}
+.pop-container .pop-inner .pop-close {
+  position: absolute;
+  right: -0.24rem;
+  top: 0.28rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 3px solid #fff;
+  background-color: #000;
+  border-radius: 50%;
+  font-size: 0.4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.65rem;
+}
+#popAttend .pop-platform .pop-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popAttend .pop-platform .pop-login .pop-wx,
+#popAttend .pop-platform .pop-login .pop-qq {
+  position: relative;
+  width: 1.96rem;
+  height: 2.84rem;
+  margin: 0 0.16rem;
+}
+#popAttend .pop-platform .pop-login .pop-wx.selected::after,
+#popAttend .pop-platform .pop-login .pop-qq.selected::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/pop_cover.png') no-repeat;
+  background-size: cover;
+}
+#popAttend .pop-platform .pop-login .pop-wx {
+  background: url('../assets/pop_login_sel_wx.jpg');
+  background-size: cover;
+}
+#popAttend .pop-platform .pop-login .pop-qq {
+  background: url('../assets/pop_login_sel_qq.jpg');
+  background-size: cover;
+}
+#popFAQ .pop-faq {
+  width: 85%;
+  height: 7.2rem;
+  margin: 0 auto;
+  font-size: 0.24rem;
+  overflow-y: scroll;
+  line-height: 0.35rem;
+  font-weight: bold;
+}
+#popFAQ .pop-faq li {
+  margin-bottom: 0.2rem;
+}
+#popFAQ .pop-faq .pop-q,
+#popFAQ .pop-faq a {
+  margin-bottom: 0.1rem;
+  color: #896144;
+}
+#popVideo .pop-inner {
+  width: 7rem;
+  height: 5.4rem;
+  border: 1px solid #7d623e;
+}
+#popVideo .pop-inner video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+#popVideo .pop-inner .pop-close {
+  top: -0.4rem;
+}
+#popDetail p {
+  width: 80%;
+  padding-bottom: 0.6rem;
+  margin: 0 auto;
+  line-height: 0.4rem;
+  font-size: 0.24rem;
+}
