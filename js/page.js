@@ -1,6 +1,6 @@
 
 var showPage = (function(){
-    var pageIndex = 0; //当前显示页面
+    var pageIndex = 1; //当前显示页面
     var pages = $$('.page-container .page');
     var len = pages.length;
     var nextIndex = null;
